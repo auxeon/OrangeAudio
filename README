@@ -1,0 +1,11 @@
+instructions to install all dependencies
+
+for real time note detection install follwing libraries 
+OpenGL - sudo apt-get install freeglut3-dev
+ALSA - sudo apt-get install alsa_utils
+	    sudo apt-get install alsamixer
+fftw - sudo apt-get install fftw3-dev
+Audio stuf - sudo apt-get install libasoun2-dev
+
+compiling - g++ scratch.cpp -lGL -lGLU -lglut -lfftw3 -lasound2
+
