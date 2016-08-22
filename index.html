@@ -1,2 +1,75 @@
-OrangeAudio Test
-works !!
+<!DOCTYPE html>
+<html>
+<head>
+<title>OrangeAudio</title>
+<style type="text/css">
+body {
+ margin-top: 0px;
+ margin-right: 0px;
+ margin-bottom: 0px;
+ margin-left: 0px
+}
+
+.headblock {
+
+        width:100%;
+	left:0;
+	height:50%;
+        font-family:sans-serif;
+	font-size:3em;
+        color:#ffffff;
+	text-align:center;
+        background-color:#e67e22;
+	padding-top:5%;
+	padding-bottom:5%;
+
+}
+.content {
+	left:0;
+	position:relative;
+	color:#e67e22;
+	font-family:sans-serif;
+}
+img{
+	position:relative;
+	width:50%;
+	margin-right:2%;
+	padding-left:10%:
+}
+.image{
+	margin-left:5%;
+	font-family:sans-serif;
+}
+</style>
+</head>
+<body>
+<div class ="headblock">
+	OrangeAudio
+</div>
+<div class ="content">
+</div>
+<div class="image">
+<img src="./orangeaudio_capture.png" width="70%" align="right">
+<h3>Ever Wished you could visualize live audio and identify the Note Played from an input source ?</h3>
+<p>Presenting to you Orange Audio a simple and elegant audio visualizer.
+Custom config file allows you to change color size density and other parameters
+As an added bonus based on the amplitude(s) of the different frequencies being played the Note Played is also shown. Works best with A Grand Piano / Keyboard .Get Hacking !
+<p>
+Instructions to install all dependencies for realtime note detection
+<br>
+<br>
+<pre>
+OpenGL 	- sudo apt-get install freeglut3-dev
+ALSA 	- sudo apt-get install alsa_utils
+	  sudo apt-get install alsamixer
+fftw3 	- sudo apt-get install fftw3-dev
+Audio	- sudo apt-get install libasoun2-dev
+
+compile - g++ scratch.cpp -lGL -lGLU -lglut -lfftw3 -lasound2
+</p>
+</pre>
+</img>
+</div>
+
+</body>
+</html>
